@@ -1,8 +1,11 @@
-## Welcome to GitHub Pages
+## UVic Special Collections and University Archives Wikidata Project
+### Visualization Experimentation
 
-You can use the [editor on GitHub](https://github.com/ElizabethBassett/uvic-scua-wikidata-experimentation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**July, 2020**
+_Project by Elizabeth Bassett, Special Collections and Archives Assistant (YCW)_
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The goal of this project is to experiment with ways that UVic Libraries can utilize Wikidata to promote interest in the holdings at Special Collections and University Archives (SCUA). The following visualizations use SPARQL queries to compile information about people and institutions who have archives and correspondence held at UVIC SCUA. As more instances of the "archives at" property are used to connect SCUA with people and institutions with pages on Wikidata, the visualizations will become more representative of the Archives' holdings.
+
 
 ### Markdown
 
@@ -28,10 +31,4 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ElizabethBassett/uvic-scua-wikidata-experimentation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
