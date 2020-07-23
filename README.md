@@ -105,3 +105,23 @@ GROUP BY ?OccupationLabel
 ORDER BY DESC (?Count)
 ```
 _*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a table._
+
+_**Which records creators have which occupations?**_
+
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FOccupationLabel%20%3FCreatorLabel%20%3FCreator%20%3FDateOfBirth%20%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP569%20%3FDateOfBirth.%0A%20%20%0A%20%20OPTIONAL%20%7B%3FCreator%20wdt%3AP106%20%3FOccupation.%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0AORDER%20BY%20%28%3FOccupationLabel%29%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+_SPARQL query used to generate the tree map:_
+```
+#defaultView:TreeMap
+SELECT ?OccupationLabel ?CreatorLabel ?Creator ?DateOfBirth 
+{
+  ?Creator wdt:P485 wd:Q47518588;
+           wdt:P569 ?DateOfBirth.
+  
+  OPTIONAL {?Creator wdt:P106 ?Occupation.}
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]".}
+}
+ORDER BY (?OccupationLabel)
+```
+_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a table, and a timeline, ._
