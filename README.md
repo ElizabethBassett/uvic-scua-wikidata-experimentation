@@ -199,3 +199,14 @@ ORDER BY (?LanguageLabel)
 _*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a tree map, and a timeline.*_
 
 <br>
+
+---
+
+<br>
+
+### **Experiment: Using Wikidata to identify correspondence held in archival fonds**
+As part of this Wikidata project, I experimented with ways to highlight the relationships between creators who have fonds at UVic and the people they corresponded with. Using the [Else Lübcke Seel fonds] (https://uvic2.coppul.archivematica.org/else-lubcke-seel-fonds) as a case study, I identified all individuals who have correspondence held in Seel's fonds. I added the "archives at" (P485) property to each of Seel's correspondent's Wikidata pages, qualified by "applies to part, aspect, or form" (P518) --> "correspondence" (Q1277575). I further qualified the "archives at" statement by listing Else Seel (Q94514551) as the "collection creator" (P6241). See the "archives at" statements on [Ezra Pound's Wikidata page] (https://www.wikidata.org/wiki/Q163366) for an example.
+
+The following visualizaton results from this experimentation, highlighting that Else Seel corresponded with a variety of people, and that the resulting letters (addressed to Seel) are held together in Seel's fonds at UVic.
+
+<iframe style="width: 80vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/embed.html#SELECT%20%3FAddresseeLabel%20%3FCorrespondentLabel%20%3FCorrespondenceAtLabel%20%0AWHERE%0A%7B%0A%20%20%3FCorrespondent%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20p%3AP485%20%5B%20ps%3AP485%20%3FCorrespondenceAt%3B%20pq%3AP518%20wd%3AQ1277575%20%5D.%0A%20%20VALUES%20%3FAddressee%20%7B%20wd%3AQ94514551%20%7D.%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
