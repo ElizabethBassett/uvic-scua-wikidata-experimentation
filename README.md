@@ -5,6 +5,7 @@ Project by Elizabeth Bassett, Special Collections and Archives Assistant (YCW) |
 
 The goal of this project is to experiment with ways that the University of Victoria (UVic) Libraries can utilize Wikidata to promote interest in the holdings at Special Collections and University Archives (SCUA). The following visualizations use SPARQL queries and the [Wikidata Query Service](https://query.wikidata.org/) to compile information about people and institutions that have archives and correspondence held at UVIC SCUA. As more instances of the "archives at" property are used to connect SCUA with people and institutions with pages on Wikidata, the visualizations will become more representative of the Archives' holdings.
 
+
 ### Visualizing the Archives' Holdings through Wikidata Queries
 
 _**Who has holdings in the Archives? Where are these creators from?**_
