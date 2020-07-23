@@ -39,5 +39,5 @@ WHERE
 ORDER BY (?DateofBirth)
 
 ```
-_*Using the Wikidata Query Service, the results of this query can also be viewed as a table._
+_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a table._
 
