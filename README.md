@@ -4,11 +4,10 @@ The goal of this project is to experiment with ways that the University of Victo
 
 <br>
 
+## Visualizing the Archives' Holdings through Wikidata Queries
 ----  
 
 <br>
-
-## Visualizing the Archives' Holdings through Wikidata Queries
 
 _**Who has holdings in the Archives?**_ 
 
