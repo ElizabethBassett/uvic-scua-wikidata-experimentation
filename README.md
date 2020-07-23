@@ -45,7 +45,7 @@ _*Using the [Wikidata Query Service](https://query.wikidata.org/), the results o
 _**What occupations do these records creators have?**_
 <iframe style="width: 50vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0ASELECT%20DISTINCT%20%3FOccupationLabel%20%28COUNT%20%28%3FCreator%29%20as%20%3FCount%29%0AWHERE%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588.%0A%20%20%3FCreator%20wdt%3AP106%20%3FOccupation.%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%20%7D%0A%7D%0AGROUP%20BY%20%3FOccupationLabel%0AORDER%20BY%20DESC%20%28%3FCount%29%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
-_SPARQL query used to generate the map:_
+_SPARQL query used to generate the bubble chart:_
 ```
 #defaultView:BubbleChart
 SELECT DISTINCT ?OccupationLabel (COUNT (?Creator) as ?Count)
