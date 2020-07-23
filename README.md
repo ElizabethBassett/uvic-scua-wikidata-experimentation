@@ -11,7 +11,7 @@ The goal of this project is to experiment with ways that the University of Victo
 
 _**Who has holdings in the Archives?**_ 
 
-<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/embed.html#SELECT%20%3FCreator%20%3FCreatorLabel%0AWHERE%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588.%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0A%0A%20ORDER%20BY%20%28%3FCreatorLabel%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FCreator%20%3FCreatorLabel%0AWHERE%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588.%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0A%0A%20ORDER%20BY%20%28%3FCreatorLabel%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -82,7 +82,7 @@ _*Using the [Wikidata Query Service](https://query.wikidata.org/), the results o
 
 _**When and where were these records creators born?**_
 
-<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3FCreator%20%3FCreatorLabel%20%3FDateOfBirth%20%3FBirthPlace%20%3FBirthPlaceLabel%20%3FCoordinates%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP569%20%3FDateOfBirth.%0A%20%20%0A%20%20OPTIONAL%20%7B%3FCreator%20wdt%3AP19%20%3FBirthPlace.%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FBirthPlace%20wdt%3AP625%20%3FCoordinates.%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0AORDER%20BY%20%28%3FDateOfBirth%29%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3FCreator%20%3FCreatorLabel%20%3FDateOfBirth%20%3FBirthPlace%20%3FBirthPlaceLabel%20%3FCoordinates%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP569%20%3FDateOfBirth.%0A%20%20%0A%20%20OPTIONAL%20%7B%3FCreator%20wdt%3AP19%20%3FBirthPlace.%0A%20%20%20%20%20%20%20%20%20%20%20%20%3FBirthPlace%20wdt%3AP625%20%3FCoordinates.%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0AORDER%20BY%20%28%3FDateOfBirth%29%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -131,7 +131,7 @@ _*Using the [Wikidata Query Service](https://query.wikidata.org/), the results o
 
 _**Which records creators have which occupations?**_
 
-<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/embed.html#SELECT%20%3FOccupationLabel%20%3FCreatorLabel%20%3FCreator%20%3FDateOfBirth%20%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP569%20%3FDateOfBirth.%0A%20%20%0A%20%20OPTIONAL%20%7B%3FCreator%20wdt%3AP106%20%3FOccupation.%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0AORDER%20BY%20%28%3FOccupationLabel%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FOccupationLabel%20%3FCreatorLabel%20%3FCreator%20%3FDateOfBirth%20%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP569%20%3FDateOfBirth.%0A%20%20%0A%20%20OPTIONAL%20%7B%3FCreator%20wdt%3AP106%20%3FOccupation.%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0AORDER%20BY%20%28%3FOccupationLabel%29" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
@@ -148,7 +148,7 @@ SELECT ?OccupationLabel ?CreatorLabel ?Creator ?DateOfBirth
 }
 ORDER BY (?OccupationLabel)
 ```
-_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a tree map, and a timeline.*_
+_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a tree map, and a timeline._
 
 <br>
 
@@ -172,13 +172,13 @@ WHERE
 GROUP BY ?LanguageLabel
 ORDER BY DESC (?Count)
 ```
-_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a table.*_
+_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a table._
 
 <br>
 
 _**Which records creators speak which languages?**_
 
-<iframe style="width: 55vw; height: 50vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/embed.html#SELECT%20%3FLanguageLabel%20%3FCreatorLabel%20%3FCreator%20%3FDateOfBirth%20%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP569%20%3FDateOfBirth.%0A%20%20%0A%20%20OPTIONAL%20%7B%3FCreator%20wdt%3AP1412%20%3FLanguage.%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0AORDER%20BY%20%28%3FLanguageLabel%29%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FLanguageLabel%20%3FCreatorLabel%20%3FCreator%20%3FDateOfBirth%20%0A%7B%0A%20%20%3FCreator%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP569%20%3FDateOfBirth.%0A%20%20%0A%20%20OPTIONAL%20%7B%3FCreator%20wdt%3AP1412%20%3FLanguage.%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0AORDER%20BY%20%28%3FLanguageLabel%29%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
 
