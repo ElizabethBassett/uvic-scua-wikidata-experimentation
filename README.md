@@ -1,4 +1,4 @@
-Project by Elizabeth Bassett, Special Collections and Archives Assistant (YCW) | July 2020
+**Project by Elizabeth Bassett, Special Collections and Archives Assistant (YCW) | July 2020**
 
 The goal of this project is to experiment with ways that the University of Victoria (UVic) Libraries can utilize Wikidata to promote interest in the holdings at Special Collections and University Archives (SCUA). The following visualizations use SPARQL queries and the [Wikidata Query Service](https://query.wikidata.org/) to compile information about people and institutions that have archives and correspondence held at UVIC SCUA. As more instances of the "archives at" (P485) property are used to connect SCUA with people and institutions with pages on Wikidata, the visualizations will become more representative of the Archives' holdings.
 
@@ -17,6 +17,8 @@ _**Who has holdings in the Archives?**_
 <br>
 
 This table includes both people and organizations that have archival fonds, collections, or correspondence held at UVic SCUA. Note that the list is not exhaustive, and only includes the records creators that have been linked to UVic through the "archives at" (P485) property on Wikidata.
+
+<br>
 
 _SPARQL query used to generate the table:_
 
@@ -41,6 +43,8 @@ _**Where are these records creators from?**_
 <br>
 
 Click the red dots on the map to see the names of records creators who have holdings at UVic SCUA, and to see where they are from. Note that some creators show up multiple times on the map, as they have lived in many locations.
+
+<br>
 
 _SPARQL query used to generate the map:_
 
