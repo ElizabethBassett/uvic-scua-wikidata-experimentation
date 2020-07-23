@@ -36,17 +36,23 @@ _SPARQL query used to generate the map:_
 
 ```
 #defaultView:Map
-SELECT ?Creator ?CreatorLabel ?CorrespondenceAtLabel ?DateofBirthLabel ?CountryLabel ?Coordinates ?ResidenceLabel
+SELECT ?Creator ?CreatorLabel ?CorrespondenceAtLabel ?DateofBirthLabel ?ResidenceLabel ?LocationLabel ?CountryOfCitizenshipLabel ?CountryLabel ?Coordinates 
 WHERE
 {
   ?Creator wdt:P485 wd:Q47518588.
   
   OPTIONAL {?Creator wdt:P569 ?DateofBirth. }
   
-  OPTIONAL {?Creator wdt:P27 ?Country. }
+  OPTIONAL {?Creator wdt:P27 ?CountryOfCitizenship. }
   
   OPTIONAL {?Creator wdt:P551 ?Residence.
             ?Residence wdt:P625 ?Coordinates.}
+  
+  OPTIONAL {?Creator wdt:P131 ?Location.
+            ?Location wdt:P625 ?Coordinates.}
+  
+  OPTIONAL {?Creator wdt:P17 ?Country.
+            ?Country wdt:625 ?Coordinates.}
   
   OPTIONAL {?Creator wdt:P485 wd:Q47518588;
            p:P485 [ ps:P485 ?CorrespondenceAt; pq:P518 wd:Q1277575 ].
