@@ -208,6 +208,7 @@ _*Using the [Wikidata Query Service](https://query.wikidata.org/), the results o
 As part of this Wikidata project, I experimented with ways to highlight the relationships between creators who have fonds at UVic and their correspondents. Using the [Else Lübcke Seel fonds](https://uvic2.coppul.archivematica.org/else-lubcke-seel-fonds) as a case study, I identified all individuals who have correspondence held in Seel's fonds. I added the "archives at" (P485) property to each of Seel's correspondents' Wikidata pages, qualified by "applies to part, aspect, or form" (P518) → "correspondence" (Q1277575). I further qualified the "archives at" statement by listing Else Seel (Q94514551) as the "collection creator" (P6241) (See figure 1). 
 
 ![alt text]( https://github.com/ElizabethBassett/uvic-scua-wikidata-experimentation/blob/master/EzraPoundArchivesAt.PNG "Ezra Pound ‘Archives At’")
+<br>
 Figure 1: The "archives at" statement on [Ezra Pound's Wikidata page](https://www.wikidata.org/wiki/Q163366).
 
 The following visualizaton results from this experimentation, highlighting that Else Seel corresponded with a variety of people, and that the resulting letters (addressed to Seel) are held together in Seel's fonds at UVic.
