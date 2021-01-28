@@ -4,6 +4,10 @@ The goal of this project is to experiment with ways that the University of Victo
 
 <br>
 
+_Note: The creation of this page was inspired by a similar [Wikidata visualization page](https://yooylee.github.io/experiment-wikidata-canadian-archive-women-in-stem/) from the University of Ottawa's [Canadian Archive of Women in STEM](https://biblio.uottawa.ca/en/women-in-stem/about) project._
+
+<br>
+
 ## Visualizing the Archives' Holdings through Wikidata Queries
 ----  
 
