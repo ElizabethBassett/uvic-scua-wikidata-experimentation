@@ -198,7 +198,7 @@ SELECT ?LanguageLabel ?CreatorLabel ?Creator ?DateOfBirth
 ORDER BY (?LanguageLabel)
 ```
 
-_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a tree map, and a timeline.*_
+_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a tree map, and a timeline._
 
 <br>
 
