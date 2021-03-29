@@ -211,6 +211,27 @@ As part of this Wikidata project, I experimented with ways to highlight the rela
 
 The following visualizaton results from this experimentation, highlighting that Else Seel corresponded with a variety of people, and that the resulting letters (addressed to Seel) are held together in Seel's fonds at UVic.
 
+<iframe style="width: 73vw; height: 70vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/sparql?query=%23defaultView%3ADimensions%0ASELECT%20%3FAddresseeLabel%20%3FCorrespondentLabel%20%3FCorrespondenceAtLabel%20%0AWHERE%0A%7B%0A%20%20%3FCorrespondent%20wdt%3AP3342%20wd%3AQ94514551%3B%0A%20%20%20%20%20%20%20%20%20%20%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20p%3AP485%20%5B%20ps%3AP485%20%3FCorrespondenceAt%3B%20pq%3AP518%20wd%3AQ1277575%20%5D.%0A%20%20VALUES%20%3FAddressee%20%7B%20wd%3AQ94514551%20%7D.%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D"  referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+<br>
+
+_SPARQL query used to generate the dimensions:_
+```
+#defaultView:Dimensions
+SELECT ?AddresseeLabel ?CorrespondentLabel ?CorrespondenceAtLabel 
+WHERE
+{
+  ?Correspondent wdt:P3342 wd:Q94514551;
+           wdt:P485 wd:Q47518588;
+           p:P485 [ ps:P485 ?CorrespondenceAt; pq:P518 wd:Q1277575 ].
+  VALUES ?Addressee { wd:Q94514551 }.
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]".}
+}
+```
+_*Using the [Wikidata Query Service](https://query.wikidata.org/), the results of this query can also be viewed as a table._
+
+-----
 <iframe style="width: 73vw; height: 70vh; border-style: solid; border-width: thin;" src="https://query.wikidata.org/embed.html#%23defaultView%3ADimensions%0ASELECT%20%3FAddresseeLabel%20%3FCorrespondentLabel%20%3FCorrespondenceAtLabel%20%0AWHERE%0A%7B%0A%20%20%3FCorrespondent%20wdt%3AP485%20wd%3AQ47518588%3B%0A%20%20%20%20%20%20%20%20%20%20%20p%3AP485%20%5B%20ps%3AP485%20%3FCorrespondenceAt%3B%20pq%3AP518%20wd%3AQ1277575%20%5D.%0A%20%20VALUES%20%3FAddressee%20%7B%20wd%3AQ94514551%20%7D.%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22.%7D%0A%7D%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 <br>
